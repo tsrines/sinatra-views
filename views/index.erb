@@ -6,5 +6,25 @@
 	<body>
 		<h1>Hello World</h1>
 		<p>This HTML code is inside of a '.erb' file in the views directory, where it belongs.</p>
+		<%= "I love " + "Ruby!!" %>
+		<%= 1 + 1 %>
+				<% if 1 == 2 %>
+					<p>1 equals 2.</p>
+				<% else %>
+					<p>1 does not equal 2.</p>
+				<% end %>
+
+				<ul>
+		<% squares = [1, 4, 9, 16] %>
+		<% squares.each do |square| %>
+			<li><%= square %></li>
+		<% end %>
+		</ul>
+		<% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+			<ul>
+			<% wall_posts.each do |post| %>
+			<li><%= post %></li>
+			<% end %>
+			</ul>
 	</body>
 </html>
